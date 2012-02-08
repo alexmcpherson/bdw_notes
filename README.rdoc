@@ -41,4 +41,5 @@ Deploy your notes app to Heroku's Cedar platform.
 ====Resources:
 
 http://guides.rubyonrails.org/
+
 http://devcenter.heroku.com/
