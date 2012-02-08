@@ -6,16 +6,14 @@
     <th>Content</th>
     <th></th>
     <th></th>
-    <th></th>
   </tr>
 
 <% @notes.each do |note| %>
   <tr>
-    <td><%= note.title %></td>
-    <td><%= note.content %></td>
-    <td><%= link_to 'Show', note %></td>
+    <td><%= link_to note.title, note %></td>
+    <td><%= truncate_note_content note.content %></td>
     <td><%= link_to 'Edit', edit_note_path(note) %></td>
-    <td><%= link_to 'Destroy', note, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Delete', note, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
